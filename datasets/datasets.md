@@ -3,8 +3,7 @@
 This repository does **not** ship raw data or separate dataset-loader files.
 Each dataset is downloaded from its public source (links below) and is loaded,
 preprocessed, and **vertically partitioned across clients inside the
-corresponding `models/` script**. This file documents, per dataset, where that
-happens and how the vertical split is defined.
+corresponding `models/` script**.
 
 | # | Dataset | Source | Loaded & processed in | Vertical split |
 |---|---------|--------|-----------------------|----------------|

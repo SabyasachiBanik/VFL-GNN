@@ -1,1 +1,38 @@
+# ── VFL-GNN requirements ──
+
+# Target interpreter: Python 3.8 or 3.9.
+#   numpy 1.21.0 and torch 2.0.1 ship no wheels for Python 3.10+, so the pinned
+#   stack below will only install on 3.8/3.9. Create the venv accordingly.
+#
+# Versions verified mutually consistent via PyPI metadata. Confirm with a fresh
+# install:  python3.9 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+
+# Core deep learning (pinned by sample)
+torch==2.0.1
+torchvision==0.15.2
+
+# Numerical / data (numpy & pandas pinned by sample)
+numpy==1.21.0
+pandas==1.3.3
+scipy==1.10.1
+
+# Classical ML
+scikit-learn==1.0.2
+
+# Plotting / graphs
+matplotlib==3.4.3
+seaborn==0.11.2
+networkx==3.1
+
+# NLP / multimodal encoders — used by MM-IMDB and MUSTARD.
+transformers==4.36.2
+datasets==2.16.1
+sentence-transformers==2.3.1
+
+# Biomedical ECG signals — used by PTB-XL (wfdb.rdsamp streaming loader)
+wfdb==4.1.0
+
+# Imaging & progress bars
+Pillow==9.5.0
+tqdm==4.65.0
 

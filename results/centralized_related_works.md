@@ -1,4 +1,4 @@
-### Table V — Comparison with Centralised VFL
+### Comparison with Centralised VFL
 
 | Method | Metric | UCI-HAR | PTB-XL | MUSTARD | MM-IMDB |
 |---|---|---|---|---|---|

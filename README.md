@@ -16,6 +16,13 @@ VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated
 <img width="253" height="310" alt="fig1-readme" src="https://github.com/user-attachments/assets/86891c29-16ba-4b85-ac97-25b418c0deb2" />
 <em>Fig. 1: Decentralized VFL system design (4 clients) — clients exchange adjacency matrices over a ring topology.</em>
 </p>
+
+<p align="center">
+  <img width="520" alt="VFL-GNN system design" src="https://github.com/user-attachments/assets/86891c29-16ba-4b85-ac97-25b418c0deb2">
+  <br>
+  <em>Fig. 1: Decentralized VFL system design (4 clients) — clients exchange adjacency matrices over a ring topology.</em>
+</p>
+
 ## Repository structure
 
 ```

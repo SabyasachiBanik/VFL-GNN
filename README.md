@@ -12,6 +12,7 @@ VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated
 - **Exponential convergence guarantee.** Consensus error contracts at rate `ρ(α) = 1 − α(1 − λ₂)/2` with `λ₂ = cos(2π/K)` (Theorem 1).
 - **Scalability.** Stable F1/accuracy as the client count `K` increases (2–15), where baselines degrade.
   
+<img width="253" height="310" alt="fig1-readme" src="https://github.com/user-attachments/assets/86891c29-16ba-4b85-ac97-25b418c0deb2" />
 
 ## Repository structure
 

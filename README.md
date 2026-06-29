@@ -1,3 +1,4 @@
+<img width="260" height="176" alt="fig2-readme" src="https://github.com/user-attachments/assets/d7072a6d-7f61-4d98-919b-895c32f47285" />
 # VFL-GNN: Decentralized Vertical Federated Learning via Graph-Based Learning Consensus
 
 > Official code repository for the paper **"Decentralized Vertical Federated Learning via Graph-Based Learning Consensus"** (under review).

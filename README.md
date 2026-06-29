@@ -55,7 +55,7 @@ Dependency versions are scripted in [`requirements.txt`](./requirements.txt), ta
 
 ## Datasets
 
-VFL-GNN is evaluated on six datasets spanning image, human-activity, healthcare, emotion, and multimedia domains. Each dataset is downloaded from its public source and loaded, preprocessed, and vertically partitioned inside the corresponding `models/` script. Please refer to [`datasets/datasets/README.md`](./datasets/datasets/README.md) for more details.
+VFL-GNN is evaluated on six datasets spanning image, human-activity, healthcare, emotion, and multimedia domains. Each dataset is downloaded from its public source and loaded, preprocessed, and vertically partitioned inside the corresponding `models/` script. Please refer to [`datasets/datasets.md`](./datasets/datasets.md) for more details.
 
 | Dataset | Domain | Clients | Samples | Task | Source |
 |---|---|---|---|---|---|

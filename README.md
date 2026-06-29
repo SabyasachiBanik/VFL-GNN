@@ -51,11 +51,11 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Dependency versions are scripted in [`requirements.txt`](./requirements.txt). The pinned stack targets **Python 3.8–3.9**. Experiments were run on an **NVIDIA RTX 4090 (24 GB, CUDA 12.4)** with PyTorch.
+Dependency versions are scripted in [`requirements.txt`](./requirements.txt), targeting **Python 3.8–3.9**. Experiments were run on an **NVIDIA RTX 4090 (24 GB, CUDA 12.4)** with PyTorch.
 
 ## Datasets
 
-VFL-GNN is evaluated on six datasets spanning image, human-activity, healthcare, emotion, and multimedia domains. **No raw data is committed**: each dataset is downloaded from its public source and loaded, preprocessed, and vertically partitioned inside the corresponding `models/` script. See [`datasets/README.md`](./datasets/README.md) for full provenance and per-dataset details.
+VFL-GNN is evaluated on six datasets spanning image, human-activity, healthcare, emotion, and multimedia domains. Each dataset is downloaded from its public source and loaded, preprocessed, and vertically partitioned inside the corresponding `models/` script. Please refer to [`datasets/README.md`](./datasets/README.md) for more details.
 
 | Dataset | Domain | Clients | Samples | Task | Source |
 |---|---|---|---|---|---|
@@ -66,12 +66,10 @@ VFL-GNN is evaluated on six datasets spanning image, human-activity, healthcare,
 | MUSTARD | Emotion | 3 | 690 | 2-class | https://github.com/soujanyaporia/MUStARD |
 | MM-IMDB | Multimedia | 2 | 25,959 | 23-class, multilabel | https://github.com/johnarevalo/gmu-mmimdb |
 
-> **MM-IMDB note:** `johnarevalo/gmu-mmimdb` is the canonical source; because its original download links are no longer available, the code loads the working Hugging Face mirror `sxj1215/mmimdb`.
-> **PTB-XL / MUSTARD note:** these have data-use / copyright restrictions — download from the source only; do not redistribute.
 
 ## Usage
 
-Each `models/` script is self-contained (loads its dataset, applies the vertical split, trains VFL-GNN, and writes metrics to `results/`):
+Each `models/` script is self-contained (loads its dataset, applies the vertical split, trains VFL-GNN, and the evaluation results are provided at `results/`):
 
 ```bash
 python "models/VFL_GNN-uci-har.py"

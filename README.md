@@ -83,11 +83,14 @@ python "models/robin_round FMNIST.py"
 Topology comparison and convergence validation:
 
 ```bash
-# Compare ring / star / fully-connected / k-random / random-2 topologies
-python topology/<topology_experiment>.py
+# Topology comparison (run the script for each topology you want to evaluate)
+python topology/ring_star.py          # ring + star
+python topology/fully-connected.py    # fully-connected
+python topology/k-random-neighbors.py # k-random (k = 4)
+python topology/random-2-neighbors.py # random-2-neighbor
 
 # Reproduce the empirical convergence study (Fashion-MNIST)
-python theoretical_validation/<convergence_experiment>.py
+python theoretical_validation/theory_validation.py
 ```
 
 ### Key hyperparameters (paper Table II)

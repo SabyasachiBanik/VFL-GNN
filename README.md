@@ -1,7 +1,7 @@
 # VFL-GNN: Decentralized Vertical Federated Learning via Graph-Based Learning Consensus
 
 > Official code repository for the paper **"Decentralized Vertical Federated Learning via Graph-Based Learning Consensus".** 
-
+> **Accepted at IEEE LCN 2026** (51st Conference on Local Computer Networks, Coimbra, Portugal)
 
 VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated Learning (VFL) framework. Instead of exchanging model parameters or high-dimensional embeddings, clients collaboratively learn a cross-feature **adjacency matrix (AM)** and reach agreement through a **ring-based consensus protocol** — reformulating vertical collaboration as a distributed graph-learning problem. The framework provably reaches consensus at an exponential rate and mitigates the performance degradation ("VFL Syndrome") that VFL systems typically suffer as the number of clients grows.
 

@@ -23,6 +23,8 @@ Columns 2–10 are the number of clients *K*. Higher F1 is better; lower communi
 
 
 #### Baselines
-
+- **Non-Fed.** — non-federated reference; each client trains independently on its own vertical feature partition devoid of any communication with other clients.
 - **[1] VertiComb** — Sánchez et al., "Analyzing the robustness of decentralized horizontal and vertical federated learning architectures in a non-iid scenario," *Applied Intelligence*, pp. 1–17, 2024.
 - **[2] De-VertiFL** — Celdrán et al., "De-VertiFL: A solution for decentralized vertical federated learning," *Proc. IEEE/IFIP Network Operations and Management Symposium (NOMS)*, Miami, FL, USA: IEEE, 2025 (short/poster paper).
+
+

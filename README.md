@@ -113,13 +113,13 @@ python theoretical_validation/theory_validation.py
 These notes document the current state of the experiments and the exact partition/topology choices, so results can be reproduced and interpreted correctly.
 
 - **Vertical feature partitions.** The split scheme is dataset-specific and is implemented inside each `models/` script:
-  - **MNIST / Fashion-MNIST** use a **round-robin** feature partition (see `models/robin_round MNIST.py` and `robin_round FMNIST.py`): input features (pixel columns) are assigned cyclically to the `K` clients (feature `i → client i mod K`), giving each client an interleaved, balanced subset. This supports the 2–15 client scaling experiments.
+  - **MNIST / Fashion-MNIST** use a **round-robin** feature partition (see `models/robin_round MNIST.py` and `robin_round FMNIST.py`): input features (pixel columns) are assigned cyclically to the `K` clients (feature `i → client i mod K`), giving each client a balanced subset. This supports the 2–15 client scaling experiments.
   - **UCI-HAR**: contiguous feature slices (561→560 features split into equal blocks).
   - **PTB-XL**: 12 ECG leads grouped into 3 clients (limb / augmented / precordial).
   - **MUSTARD**: 3 clients by feature role (utterance / context / speaker).
   - **MM-IMDB**: 2 clients by modality (image / text).
 
-- **Seeds.** Most datasets are evaluated over multiple random seeds (e.g., PTB-XL reports mean ± 95% CI over 5 seeds). **MUSTARD and MM-IMDB are currently reported for a single seed (`seed = 42`); multi-seed runs are in progress.** Their observed trends are stable across runs: with a fixed vertical partition the adjacency-consensus dynamics are largely deterministic, in contrast to the variance introduced by the *randomized topologies* (k-random, random-2-neighbor).
+- **Seeds.** Most datasets are evaluated over multiple random seeds (e.g., PTB-XL reports mean ± 95% CI over 5 seeds). MUSTARD and MM-IMDB are currently reported for a single seed (`seed = 42`); multi-seed runs are in progress. Their observed trends are stable across runs: with a fixed vertical partition the adjacency-consensus dynamics are largely deterministic, in contrast to the variance introduced by the *randomized topologies* (k-random, random-2-neighbor).
 
 - **Convergence validation dataset.** The empirical validation of the convergence theory (Theorem 1) — consensus-error decay on a log-linear scale and the theoretical-vs-empirical contraction rate `ρ(α)` — is conducted on **Fashion-MNIST** (see `theoretical_validation/`).
 

@@ -138,13 +138,12 @@ See the paper and `results/` for full tables and figures.
 This paper has been accepted at IEEE LCN 2026. If you find this repository helpful, please cite our work: 
 
 ```bibtex
-@INPROCEEDINGS{VFL-GNN,
-AUTHOR="Sabyasachi Banik and Eric Samikwa and Torsten Ingo Braun",
-TITLE="Decentralized Vertical Federated Learning via {Graph-Based} Learning
-Consensus",
-BOOKTITLE="2026 IEEE 51st Conference on Local Computer Networks (LCN) (LCN 2026)",
-ADDRESS="Coimbra, Portugal",
-YEAR=2026
+@inproceedings{banik2026vflgnn,
+  author    = {Sabyasachi Banik and Eric Samikwa and Torsten Ingo Braun},
+  title     = {Decentralized Vertical Federated Learning via {Graph}-{Based} Learning Consensus},
+  booktitle = {2026 IEEE 51st Conference on Local Computer Networks (LCN)},
+  address   = {Coimbra, Portugal},
+  year      = {2026}
 }
 
 ```

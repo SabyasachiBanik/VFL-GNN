@@ -1,4 +1,4 @@
-### Table IV — Accuracy (%) and Per-Round Communication Cost (MB) across Topologies
+### Accuracy (%) and Per-Round Communication Cost (MB) across Topologies
 
 Client configurations *K* ∈ {3, 5, 7, 9}.
 

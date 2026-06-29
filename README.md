@@ -86,7 +86,7 @@ Topology comparison and convergence validation:
 # Topology comparison (run the script for each topology you want to evaluate)
 python topology/ring_star.py          # ring + star
 python topology/fully-connected.py    # fully-connected
-python topology/k-random-neighbors.py # k-random (k = 4)
+python topology/k-random-neighbors.py # k-random
 python topology/random-2-neighbors.py # random-2-neighbor
 
 # Reproduce the empirical convergence study (Fashion-MNIST)

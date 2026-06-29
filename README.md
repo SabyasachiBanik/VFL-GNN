@@ -25,7 +25,7 @@ VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated
 
 ```
 VFL-GNN/
-├── datasets/                 # Dataset documentation + source links (no raw data committed)
+├── datasets/                 # Dataset documentation + source links
 │   └── README.md
 ├── models/                   # Per-dataset VFL-GNN implementations (load + preprocess + vertical split + train)
 │   ├── VFL_GNN-mm-imdb.py     # MM-IMDB   (image/text modality split)

@@ -51,7 +51,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Exact, pinned dependency versions are in [`requirements.txt`](./requirements.txt). The pinned stack targets **Python 3.8–3.9**. Experiments were run on an **NVIDIA RTX 4090 (24 GB, CUDA 12.4)** with PyTorch.
+Dependency versions are scripted in [`requirements.txt`](./requirements.txt). The pinned stack targets **Python 3.8–3.9**. Experiments were run on an **NVIDIA RTX 4090 (24 GB, CUDA 12.4)** with PyTorch.
 
 ## Datasets
 

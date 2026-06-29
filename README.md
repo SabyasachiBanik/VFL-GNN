@@ -45,7 +45,7 @@ VFL-GNN/
 ## Installation
 
 ```bash
-git clone <git clone https://github.com/SabyasachiBanik/VFL-GNN.git>
+git clone https://github.com/SabyasachiBanik/VFL-GNN.git
 cd VFL-GNN
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt

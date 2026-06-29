@@ -1,7 +1,7 @@
 # VFL-GNN: Decentralized Vertical Federated Learning via Graph-Based Learning Consensus
 
 > Official code repository for the paper **"Decentralized Vertical Federated Learning via Graph-Based Learning Consensus"** (under review).
-> 📄 The manuscript is included in this repository: [`VFL_Reduced.pdf`](./VFL_Reduced.pdf).
+
 
 VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated Learning (VFL) framework. Instead of exchanging model parameters or high-dimensional embeddings, clients collaboratively learn a cross-feature **adjacency matrix (AM)** and reach agreement through a **ring-based consensus protocol** — reformulating vertical collaboration as a distributed graph-learning problem. The framework provably reaches consensus at an exponential rate and mitigates the performance degradation ("VFL Syndrome") that VFL systems typically suffer as the number of clients grows.
 
@@ -11,7 +11,8 @@ VFL-GNN is a communication-efficient, **fully decentralized** Vertical Federated
 - **Ring-based consensus.** Each client communicates only with its two ring neighbors and performs consensus averaging, eliminating any central coordinator.
 - **Exponential convergence guarantee.** Consensus error contracts at rate `ρ(α) = 1 − α(1 − λ₂)/2` with `λ₂ = cos(2π/K)` (Theorem 1).
 - **Scalability.** Stable F1/accuracy as the client count `K` increases (2–15), where baselines degrade.
-
+  
+<img width="253" height="310" alt="fig1-readme" src="https://github.com/user-attachments/assets/8471ae37-9453-4f70-8503-4b19b7984b1a" />
 ## Repository structure
 
 ```

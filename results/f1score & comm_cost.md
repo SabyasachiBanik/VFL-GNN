@@ -1,4 +1,4 @@
-### Table III — F1-Score and Per-Round Communication Cost (MB) of VFL-GNN vs. Baselines
+### F1-Score and Per-Round Communication Cost (MB) of VFL-GNN vs. Baselines
 
 | Dataset | Method | Metric | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |---|---|---|---|---|---|---|---|---|---|---|---|

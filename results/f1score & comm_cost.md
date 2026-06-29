@@ -20,3 +20,9 @@
 | FMNIST | **VFL-GNN** | **Comm (MB)** | **1.17** | **0.78** | **0.59** | **0.47** | **0.39** | **0.33** | **0.30** | **0.26** | **0.24** |
 
 Columns 2–10 are the number of clients *K*. Higher F1 is better; lower communication cost is better. "–" = not applicable (Non-Fed. clients do not communicate). **Bold** = our method.
+
+
+#### Baselines
+
+- **[1] VertiComb** — Sánchez et al., "Analyzing the robustness of decentralized horizontal and vertical federated learning architectures in a non-iid scenario," *Applied Intelligence*, pp. 1–17, 2024.
+- **[2] De-VertiFL** — Celdrán et al., "De-VertiFL: A solution for decentralized vertical federated learning," *Proc. IEEE/IFIP Network Operations and Management Symposium (NOMS)*, Miami, FL, USA: IEEE, 2025 (short/poster paper).

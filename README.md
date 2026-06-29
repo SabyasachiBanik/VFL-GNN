@@ -121,7 +121,7 @@ These notes document the current state of the experiments and the exact partitio
 
 - **Seeds.** Most datasets are evaluated over multiple random seeds (e.g., PTB-XL reports mean ± 95% CI over 5 seeds). MUSTARD and MM-IMDB are currently reported for a single seed (`seed = 42`); multi-seed runs are in progress. Their observed trends are stable across runs: with a fixed vertical partition the adjacency-consensus dynamics are largely deterministic, in contrast to the variance introduced by the *randomized topologies* (k-random, random-2-neighbor).
 
-- **Convergence validation dataset.** The empirical validation of the convergence theory (Theorem 1): consensus-error decay on a log-linear scale and the theoretical-vs-empirical contraction rate `ρ(α)` is conducted on Fashion-MNIST (see `theoretical_validation/`).
+- **Convergence validation dataset.** The empirical validation of the convergence theory (Theorem 1): consensus-error decay on a log-linear scale and the theoretical-vs-empirical contraction rate `ρ(α)` is conducted on Fashion-MNIST (see `theoretical_validation/`). Each consensus-error trajectory is averaged over 3 random seeds, run across client configurations K ∈ {6, …, 10}; the per-K results are in results/consensus_error/ (K6_3seeds.csv … K10_3seeds.csv).
 
 - **Topology configurations.** The topology study compares ring (`T_r`), centralized star (`T_sc`), fully-connected (`T_f`), k-random (`T_k`), and random-2-neighbor (`T_2`). In the k-random topology, each client connects to `k = 4` randomly chosen neighbors in all reported experiments, chosen to keep its connectivity comparable to the other evaluated topologies.
 
